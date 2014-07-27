@@ -275,9 +275,9 @@
 		  event.preventDefault();
 
 			$.post("https://zapier.com/hooks/catch/jnsvg/", $( "#contact-form" ).serialize())
-				.done(function( data ) {
+				.done(function() {
 					$('#contact-modal').modal('hide');
-					$('#contact-name').text(data.full_name);
+					$('#contact-name').text($("input[name='full_name']").val());
 					$('#thanks-modal').modal('show');
 				});
 		});
