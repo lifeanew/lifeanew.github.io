@@ -5,3 +5,8 @@
 #home #hero small {
   color: #fff;
 }
+
+#home #hero h1.logo {
+  padding: 0px;
+  max-width: 200px;
+}
